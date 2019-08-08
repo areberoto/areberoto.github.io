@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<style>
+	body{
+		background: #B0BEC5;
+	}
+	#profile-photo{
+		width: 160px;
+		border-radius: 50%;
+		border-width: 3px;
+		border-color: #263238;
+		border-style: solid;
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	h1, h2, h3, h4, h5, h6{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 500;
+		color: #263238;
+		text-align: center;
+	}
+	.headers{
+		text-align: left;
+		padding-left: 8%; 
+	}
+
+	.button{
+		background-color: #263238;
+		color: white;
+		border-radius: 10px;
+		text-align: center;
+		font-size: 12px;
+		font-family: 'Open Sans', sans-serif;
+		cursor: pointer;
+		padding: 5px 8px 5px 8px;
+	}
+	.button:hover{
+		animation-name: buttonColor;
+		animation-duration: 500ms;
+		animation-fill-mode: forwards;
+		color: white;
+	}
+	@keyframes buttonColor{
+		100%{
+			background-color: #607D8B;
+		}
+	}
+	#main-button{
+		background-color: #607D8B;
+		color: white;
+		border-radius: 10px;
+		text-align: center;
+		font-size: 12px;
+		font-family: 'Open Sans', sans-serif;
+		cursor: pointer;
+		padding: 5px 8px 5px 8px;
+	}
+	#buttonsDiv{
+  		display: flex;
+  		justify-content: center;
+	}
+	#about-me{
+		font-size: 16px;
+		color: #37474F;
+		font-family: 'Open Sans', sans-serif;
+		text-align: justify;
+		padding: 0 5% 15px 5%;
+	}
+	#about-blog{
+		font-size: 16px;
+		color: #37474F;
+		font-family: 'Open Sans', sans-serif;
+		text-align: justify;
+		padding: 0 5% 15px 5%;
+	}
+	.divBlock{
+		border-radius: 20px;
+		background: white;
+		margin:auto;
+	}
+
+	#social-networks{
+		text-align: center;
+		font-size: 12px;
+		color: #263238;
+		font-family: 'Open Sans', sans-serif;
+	}
+	#twitter-logo{
+		width: 30px;
+	}
+	#github-logo{
+		width: 30px;
+	}
+	#outlook-logo{
+		width: 30px;
+	}
+</style>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Alberto Alvarez - Blog</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+</head>
+
+<body>
+	<img id="profile-photo" src="https://avatars1.githubusercontent.com/u/44409207?s=460&v=4" alt="My photo">
+	<h1>ALBERTO ALVAREZ GONZÁLEZ</h1>
+
+	<div id="buttonsDiv">
+		<a href="index.html"><button id="main-button" type="button">Home</button></a>
+		<a href="100DaysOfCode/R1-100DOC.html"><button class="button" type="button">#100DaysOfCode / R1</button></a>
+	</div>
+	<hr>
+
+	<div class="divBlock">
+	<h2 class="headers">WHO AM I?</h2>
+	<p id="about-me">
+		My name is Alberto and I'm a mexican <em>Electronics Engineering</em> 🔌 student at Universidad Autónoma de San Luis Potosí, Mexico. I started my B.S. in 2014 and I will graduate 🎓 on december 2018. I'm interested in IoT, microcontrollers, software, computers and digital electronics. Right now I'm trying to decide if I continue my studies and do a master's degree or if I go to the industry for a while and see how it goes. I like to learn new things, play videogames, read fantasy books (J.R.R. Tolkien is the best author for me) and go out with friends for a beer 🍺 and a good talk. I'm also learning german and I was very lucky because I got a scholarship to be able to study an intensive german course at <em>Goethe Institut</em>, Dresden, in november 2016.
+	</p>
+	</div>
+
+	<div class="divBlock">
+	<h2 class="headers">ABOUT THIS BLOG</h2>
+	<p id="about-blog">
+		This is my personal blog and I'm building it while I learn web development because I'm completly new at this. I am currently doing the <a href="https://www.100daysofcode.com/" target="_blank">#100DaysOfCode</a> challenge and my main goal is to finish with a stable, good-looking webpage where I can share my projects and personal experiences about electronics engineering and related stuff. I also want to mention that I was inspired by professor Ken Bauer to do this when he gave an excellent conference about Flipped Classroom at CONISOFT 2018.
+	</p>
+	</div>
+
+	<div id="social-networks">
+		<a href="https://twitter.com/AlbertoValar" target="_blank"><img id="twitter-logo" src="logos/twitter_logo.png" alt="Twitter link to profile"></a>
+		<a href="https://github.com/areberoto" target="_blank"><img id="github-logo" src="logos/github.png" alt="Github link to profile"></a>
+		<a href="mailto:alberto.alvarez.96@outlook.com" target="_blank"><img id="outlook-logo" src="logos/outlook.png" alt="Outlook email"></a>
+	</div>
+</body>

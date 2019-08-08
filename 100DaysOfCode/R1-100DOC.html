@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<style>
+	body{
+		background: #B0BEC5;
+	}
+	#profile-photo{
+		width: 160px;
+		border-radius: 50%;
+		border-width: 3px;
+		border-color: #263238;
+		border-style: solid;
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	h1, h2, h3, h4, h5, h6{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 500;
+		color: #263238;
+		text-align: center;
+	}
+	.headers{
+		text-align: left;
+	}
+	.button{
+		background-color: #263238;
+		color: white;
+		border-radius: 10px;
+		text-align: center;
+		font-size: 12px;
+		font-family: 'Open Sans', sans-serif;
+		cursor: pointer;
+		padding: 5px 8px 5px 8px;
+	}
+	.button:hover{
+		animation-name: buttonColor;
+		animation-duration: 500ms;
+		animation-fill-mode: forwards;
+		color: white;
+	}
+	@keyframes buttonColor{
+		100%{
+			background-color: #607D8B;
+		}
+	}
+	#main-button{
+		background-color: #607D8B;
+		color: white;
+		border-radius: 10px;
+		text-align: center;
+		font-size: 12px;
+		font-family: 'Open Sans', sans-serif;
+		cursor: pointer;
+		padding: 5px 8px 5px 8px;
+	}
+	#buttonsDiv{
+  		display: flex;
+  		justify-content: center;
+	}
+	#content{
+		font-size: 16px;
+		color: #37474F;
+		font-family: 'Open Sans', sans-serif;
+		text-align: justify;
+		padding: 0 5% 15px 5%;
+	}
+	.pictures{
+		width: 250px;
+		border-width: 2px;
+		border-color: black;
+		border-style: solid;
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	.divBlock{
+		border-radius: 20px;
+		background: white;
+		margin:auto;
+	}
+	#social-networks{
+		text-align: center;
+		font-size: 12px;
+		color: #263238;
+		font-family: 'Open Sans', sans-serif;
+	}
+	#twitter-logo{
+		width: 30px;
+	}
+	#github-logo{
+		width: 30px;
+	}
+	#outlook-logo{
+		width: 30px;
+	}
+</style>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>100DaysOfCode Round #1</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+</head>
+
+<body>
+	<img id="profile-photo" src="https://avatars1.githubusercontent.com/u/44409207?s=460&v=4" alt="My photo">
+	<h1>ALBERTO ALVAREZ GONZÁLEZ</h1>
+
+	<div id="buttonsDiv">
+		<a href="../index.html"><button class="button" type="button">Home</button></a>
+		<a href="R1-100DOC.html"><button id="main-button" type="button">#100DaysOfCode / R1</button></a>
+	</div>
+
+	<hr>
+
+	<div class="divBlock">
+	<h2>100 DAYS OF CODE / R1 💪</h2>
+	<div id="content">
+		<p><strong>Goals:</strong> Do the <em>FreeCodeCamp</em>’s course and use what I learn to build my personal webpage. Here we have an electronics engineering student learning more about code 👨‍💻. If you want to know more about this challenge visit <a href="https://www.100daysofcode.com/" target="_blank">#100DaysOfCode</a>.</p>
+
+		<dl>
+			<dt><h3 class="headers">R1D1 / 29-October-2018</h3></dt>
+			<dd>I started and finished the <em>"BASIC HTML and HTML5"</em> section of the <em>"Responsive Web Design Certification"</em> course at <em>freeCodeCamp</em>. Great for refreshing my basic knowledge of HTML.</dd>
+
+			<dt><h3 class="headers">R1D2 / 30-October-2018</h3></dt>
+			<dd>I did all <em>"Basic CSS"</em> tutorial of <em>freeCodeCamp</em>. I'm already thinking of my future blog.</dd>
+
+			<dt><h3 class="headers">R1D3 / 31-October-2018</h3></dt>
+			<dd>Today I did part of <em>freeCodeCamp</em>'s <em>"Applied Visual Design"</em> tutorial. Then I thought of starting my blog using what I learned these last two days. Here is my basic blog using HTML and CSS: <a href="https://areberoto.github.io/">Home</a>. I'll be updating it.</dd>
+
+			<dt><h3 class="headers">R1D4 / 01-November-2018</h3></dt>
+			<dd>I started to learn how to implement a FIR digital filter. Tomorrow I will finish coding an android app that uses an accelerometer. The filter removes the gravity constant. Time to go to bed.</dd>
+
+			<dt><h3 class="headers">R1D5 / 02-November-2018</h3></dt>
+			<dd>I finished implementing the Android app that shows the raw values of the accelerometer sensor and the filtered values without the gravity. I used a Low-Pass FIR digital filter of order 47. The sreenshot is when my phone was laying on my desk, gravity on <em>z</em> axis.</dd>
+		</dl>
+
+		<img class="pictures" src="../pictures/filter_ss.png" alt="Screenshot of the android app (FIR filter)">
+
+		<dl>
+			<dt><h3 class="headers">R1D6 / 03-November-2018</h3></dt>
+			<dd>I continued doing the "<em>Applied Visual Design</em>" tutorial of <em>freeCodeCamp</em>. I also wanted to make some changes to my blog using what I learned.</dd>
+
+			<dt><h3 class="headers">R1D7 / 04-November-2018</h3></dt>
+			<dd>I learned about color theory and worked a little bit on my blog. Today was not a very productive day, too tired. 😴</dd>
+
+			<dt><h3 class="headers">R1D8 / 05-November-2018</h3></dt>
+			<dd>Today was different, no <em>HTML</em> or <em>CSS</em>. I found <a href="https://www.zerynth.com/" target="_blank">Zerynth</a> when I was reading about the ESP32 so I decided to try it out. Very cool software for microcontrollers. I coded some basic python scripts for my ESP32, probably I will migrate to this IDE now.</dd>
+
+			<dt><h3 class="headers">R1D9 / 06-November-2018</h3></dt>
+			<dd>I killed two birds with one stone. I programmed my ESP32 for generating a sine wave with variable frequency, which I then used for a SPWM that goes into a DC/AC (H-Bridge) and controls the speed of a single phase AC motor.</dd>
+
+			<dt><h3 class="headers">R1D10-11 / 07 and 08-November-2018</h3></dt>
+			<dd>I've been too busy with final projects and homework, but yesterday and today I programmed two apps for Android. I miss my <em>HTML</em> and <em>CSS</em> tutorials from <em>freeCodeCamp</em>. Hope this weekend I can continue learning that and work a little more in my blog.
+			One of the apps I programmed was another filter for the accelerometer sensor but this time I used a IIR filter. This one works much better, is faster and uses just a few coefficients. Best option if you want to use a filter for this sensor.</dd>
+		</dl>
+			<img class="pictures" src="../pictures/filter_iir.png" alt="Screenshot of the android app (IIR filter)">
+
+		<dl>
+			<dt><h3 class="headers">- / 9-November-2018</h3></dt>
+			<dd>It's sad to say this but today I coded nothing. Still too busy working with final projects and homework. (Yes, it is friday 😪). I don't want to give up this challenge, I'm really trying not to skip a single day.</dd>
+			<dt><h3 class="headers">R1D12 / 10-November-2018</h3></dt>
+			<dd>I finally was able to finish the "<em>Applied Visual Design</em>" tutorial of <em>freeCodeCamp</em>. I learned about animations using <em>CSS</em>. Now it's time to do "<em>Applied Accessibility<em>" section 💪🏼</dd>
+		</dl>
+
+	</div>
+		<p>
+			<!--Blank line -->
+		</p>
+	</div>
+
+	<div id="social-networks">
+		<a href="https://twitter.com/AlbertoValar" target="_blank"><img id="twitter-logo" src="../logos/twitter_logo.png" alt="Twitter link to profile"></a>
+		<a href="https://github.com/areberoto" target="_blank"><img id="github-logo" src="../logos/github.png" alt="Github link to profile"></a>
+		<a href="mailto:alberto.alvarez.96@outlook.com" target="_blank"><img id="outlook-logo" src="../logos/outlook.png" alt="Outlook email"></a>
+	</div>
+</body>
