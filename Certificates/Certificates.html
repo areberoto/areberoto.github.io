@@ -22,9 +22,7 @@
 	}
 	.headers{
 		text-align: left;
-		padding-left: 8%; 
 	}
-
 	.button{
 		background-color: #263238;
 		color: white;
@@ -60,26 +58,27 @@
   		display: flex;
   		justify-content: center;
 	}
-	#about-me{
+	#content{
 		font-size: 16px;
 		color: #37474F;
 		font-family: 'Open Sans', sans-serif;
 		text-align: justify;
 		padding: 0 5% 15px 5%;
 	}
-	#about-blog{
-		font-size: 16px;
-		color: #37474F;
-		font-family: 'Open Sans', sans-serif;
-		text-align: justify;
-		padding: 0 5% 15px 5%;
+	.pictures{
+		width: 650px;
+		border-width: 2px;
+		border-color: black;
+		border-style: solid;
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
 	}
 	.divBlock{
 		border-radius: 20px;
 		background: white;
 		margin:auto;
 	}
-
 	#social-networks{
 		text-align: center;
 		font-size: 12px;
@@ -100,7 +99,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Alberto Alvarez - Blog</title>
+	<title>Certificates</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 </head>
 
@@ -109,28 +108,27 @@
 	<h1>ALBERTO ALVAREZ GONZÁLEZ</h1>
 
 	<div id="buttonsDiv">
-		<a href="index.html"><button id="main-button" type="button">Home</button></a>
-		<a href="Certificates/Certificates.html"><button class="button" type="button">Certificates</button></a>
+		<a href="../index.html"><button class="button" type="button">Home</button></a>
+		<a href="R1-100DOC.html"><button id="main-button" type="button">Certificates</button></a>
 	</div>
+
 	<hr>
 
 	<div class="divBlock">
-	<h2 class="headers">ABOUT ME</h2>
-	<p id="about-me">
-		My name is Alberto and I'm a mexican <em>Electronics Engineer</em> 🔌 I started my B.S. in 2014 and I graduated 🎓 on december 2018. I'm interested in IoT, microcontrollers, software, computers and digital electronics. 	Right now I'm studying for a master's degree in Digital Signal Processing. I like to learn new things, play videogames, read fantasy and science books and go out with friends for a beer 🍺 and a good talk. I'm also learning german and I was able to study an intensive german course at <em>Goethe Institut</em>, Dresden, in november 2016.
-	</p>
-	</div>
+	<h2>CERTIFICATES</h2>
+	<div id="content">
+		
+		<img class="pictures" src="../pictures/c.jpg" alt="C Programming for Beginners - Certificate of Completition">
 
-	<div class="divBlock">
-	<h2 class="headers">ABOUT THIS BLOG</h2>
-	<p id="about-blog">
-		This is my personal blog, where I'll share with you some of my projects and personal experiences about electronics engineering and related stuff. I also want to mention that I was inspired by professor Ken Bauer to do this when he gave an excellent conference about <em>Flipped Classroom</em> at CONISOFT 2018.
-	</p>
+	</div>
+		<p>
+			<!--Blank line -->
+		</p>
 	</div>
 
 	<div id="social-networks">
-		<a href="https://twitter.com/AlbertoValar" target="_blank"><img id="twitter-logo" src="logos/twitter_logo.png" alt="Twitter link to profile"></a>
-		<a href="https://github.com/areberoto" target="_blank"><img id="github-logo" src="logos/github.png" alt="Github link to profile"></a>
-		<a href="mailto:alberto.alvarez.96@outlook.com" target="_blank"><img id="outlook-logo" src="logos/outlook.png" alt="Outlook email"></a>
+		<a href="https://twitter.com/AlbertoValar" target="_blank"><img id="twitter-logo" src="../logos/twitter_logo.png" alt="Twitter link to profile"></a>
+		<a href="https://github.com/areberoto" target="_blank"><img id="github-logo" src="../logos/github.png" alt="Github link to profile"></a>
+		<a href="mailto:alberto.alvarez.96@outlook.com" target="_blank"><img id="outlook-logo" src="../logos/outlook.png" alt="Outlook email"></a>
 	</div>
 </body>
