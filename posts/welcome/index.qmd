@@ -1,0 +1,14 @@
+---
+title: "About Me - Alberto Alvarez"
+description: "Learn a little bit about myself and this blog!"
+author: "Alberto Alvarez"
+date: "2024-10-15"
+image: "thumbnail.jpg"
+categories: [news]
+---
+
+Hi there! Welcome to my personal blog. I'm exited to share with you a bit of my learning path on AI/ML and embedded systems.
+
+![](../../profile.JPG)
+
+WIP
