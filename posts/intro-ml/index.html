@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Alberto Alvarez">
+<meta name="dcterms.date" content="2024-10-15">
+<meta name="description" content="Why have I created this blog about AI/ML?">
 
-<title>My Blog – Edge AI/ML and Embedded Systems - Alberto Alvarez</title>
+<title>Getting back to it, from the basics of ML! – Edge AI/ML and Embedded Systems - Alberto Alvarez</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +69,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Edge AI/ML and Embedded Systems - Alberto Alvarez</span>
     </a>
   </div>
@@ -149,7 +92,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -172,113 +115,101 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">My Blog</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Getting back to it, from the basics of ML!</h1>
+                  <div>
+        <div class="description">
+          Why have I created this blog about AI/ML?
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">machine learning</div>
+                <div class="quarto-category">blogging</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Alberto Alvarez </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 15, 2024</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="blogging">blogging <span class="quarto-category-count">(1)</span></div><div class="category" data-category="machine learning">machine learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<section id="where-am-i-at-the-end-of-2024" class="level1">
+<h1>Where am I at the end of 2024?</h1>
+<p>Back in 2021 I took Andrew Ng’s “<em>Machine Learning by Stanford University</em>” specialization in Coursera, which was my first formal introduction to the amazing field of Machine Learning (ML). It honestly felt really good to finish the specialization and not quit in the process, but I have to say, it was not easy! I remember some lectures were very complex, specially when learning about stochastic gradient descent (SGD) for the first time. Anyways, I managed to finish the specialization and graduate from my Master’s, which eventually got me a job related to ML 🎉.</p>
+<p>I can proudly say that below certificate is my first one in the field! I’m sure it will not be the last one!</p>
+<p><img src="./data/certificate.png" class="img-fluid"></p>
+<p>Since late 2021 I have worked in ML related tasks. I optimize and deploy deep learning models to embedded devices that have what we call a deep learning accelerator or <em>Neural Processing Unit</em> (NPU). However, I’m really interested in diving deeper into Machine Learning, Deep Learning, Natural Language Processing (NLP), computer vision, optimization methods for Edge AI/ML and much more!</p>
+<p>For those reasons, I really want to get back to the basics of ML to refresh the concepts and strengthen my skills, to eventually become an expert in the field. I have decided to start my learning path again by taking the new, refreshed “<em>Machine Learning Specialization</em>” course from DeepLearning.AI and share with you my journey in this blog. I hope you like it!</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+DeepLearning.AI - Machine Learning Specialization
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can find the specialization at: <a href="https://www.deeplearning.ai/courses/machine-learning-specialization/">Machine Learning Specialization</a>.</p>
+</div>
+</div>
+</section>
+<section id="what-is-machine-learning" class="level1">
+<h1>What is Machine Learning?</h1>
+<p>In today’s world, hearing about <em>Artificial Intelligence</em> (AI) in a daily conversation is not uncommon. We hear about it everywhere and everyone wants to talk about it, even if they have no real clue of how it works or what it really is. Some even say it will take over humanity very soon 👀. However, there is another field that is unlikely to hear about in daily conversations, but which is very tightly related to AI: <em>Machine Learning</em> (ML).</p>
+<p>There are many different definitions of what ML is, but let’s look at the following:</p>
+<blockquote class="blockquote">
+<p>“<em>Field of study that gives computers the ability to learn without being explicitly programmed</em>” - Arthur Samuel (1959).</p>
+</blockquote>
+<p>That is a very informal definition, but one that clearly explains the idea of what machine learning is: the process in which a computer learns to do a task that.</p>
+<section id="types-of-machine-learning" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-machine-learning">Types of Machine Learning</h2>
+<p>There are three main types of ML, which we briefly explain:</p>
+<ul>
+<li>Supervised learning:</li>
+<li>Unsupervised learning:</li>
+<li>Reinforcement learning:</li>
+</ul>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<ul>
+<li></li>
+</ul>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news" data-listing-date-sort="1728972000000" data-listing-file-modified-sort="1729044518462" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="24">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/welcome/thumbnail.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">About Me - Alberto Alvarez</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/welcome/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/welcome/index.html" class="no-external">Learn a little bit about myself and this blog!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Oct 15, 2024
-</div>
-<div class="listing-author">
-Alberto Alvarez
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="machine learning,blogging" data-listing-date-sort="1728972000000" data-listing-file-modified-sort="1729055371702" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="417">
-<div class="thumbnail">
-<p><a href="./posts/intro-ml/index.html" class="no-external"></a></p><a href="./posts/intro-ml/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/intro-ml/motivated.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/intro-ml/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/intro-ml/index.html" class="no-external">Getting back to it, from the basics of ML!</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/intro-ml/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('machine learning'); return false;">
-machine learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('blogging'); return false;">
-blogging
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/intro-ml/index.html" class="no-external">Why have I created this blog about AI/ML?</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/intro-ml/index.html" class="no-external">
-<div class="listing-date">
-Oct 15, 2024
-</div>
-<div class="listing-author">
-Alberto Alvarez
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

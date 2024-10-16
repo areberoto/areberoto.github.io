@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "About Me - Alberto Alvarez",
+    "objectID": "posts/intro-ml/index.html",
+    "href": "posts/intro-ml/index.html",
+    "title": "Getting back to it, from the basics of ML!",
     "section": "",
-    "text": "Hi there! Welcome to my personal blog. I’m exited to share with you a bit of my learning path on AI/ML and embedded systems.\n\nWIP"
+    "text": "Back in 2021 I took Andrew Ng’s “Machine Learning by Stanford University” specialization in Coursera, which was my first formal introduction to the amazing field of Machine Learning (ML). It honestly felt really good to finish the specialization and not quit in the process, but I have to say, it was not easy! I remember some lectures were very complex, specially when learning about stochastic gradient descent (SGD) for the first time. Anyways, I managed to finish the specialization and graduate from my Master’s, which eventually got me a job related to ML 🎉.\nI can proudly say that below certificate is my first one in the field! I’m sure it will not be the last one!\n\nSince late 2021 I have worked in ML related tasks. I optimize and deploy deep learning models to embedded devices that have what we call a deep learning accelerator or Neural Processing Unit (NPU). However, I’m really interested in diving deeper into Machine Learning, Deep Learning, Natural Language Processing (NLP), computer vision, optimization methods for Edge AI/ML and much more!\nFor those reasons, I really want to get back to the basics of ML to refresh the concepts and strengthen my skills, to eventually become an expert in the field. I have decided to start my learning path again by taking the new, refreshed “Machine Learning Specialization” course from DeepLearning.AI and share with you my journey in this blog. I hope you like it!\n\n\n\n\n\n\nDeepLearning.AI - Machine Learning Specialization\n\n\n\nYou can find the specialization at: Machine Learning Specialization."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "My Blog",
-    "section": "",
-    "text": "About Me - Alberto Alvarez\n\n\n\n\n\n\nnews\n\n\n\nLearn a little bit about myself and this blog!\n\n\n\n\n\nOct 15, 2024\n\n\nAlberto Alvarez\n\n\n\n\n\n\nNo matching items"
+    "objectID": "posts/intro-ml/index.html#types-of-machine-learning",
+    "href": "posts/intro-ml/index.html#types-of-machine-learning",
+    "title": "Getting back to it, from the basics of ML!",
+    "section": "Types of Machine Learning",
+    "text": "Types of Machine Learning\nThere are three main types of ML, which we briefly explain:\n\nSupervised learning:\nUnsupervised learning:\nReinforcement learning:"
   },
   {
     "objectID": "about.html",
@@ -19,5 +19,19 @@
     "title": "About",
     "section": "",
     "text": "Hi! I’m Alberto, a software engineer learning about AI/ML and programming on embedded systems 💻. Come join me in my learning path of this amazing field and let’s discover together new techonlogies and ways to code! Oh, and I also like to take photos 📸, so you might find some of my pics throughout the blog from now and then. I hope you enjoy it!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Blog",
+    "section": "",
+    "text": "About Me - Alberto Alvarez\n\n\n\n\n\n\nnews\n\n\n\nLearn a little bit about myself and this blog!\n\n\n\n\n\nOct 15, 2024\n\n\nAlberto Alvarez\n\n\n\n\n\n\n\n\n\n\n\n\nGetting back to it, from the basics of ML!\n\n\n\n\n\n\nmachine learning\n\n\nblogging\n\n\n\nWhy have I created this blog about AI/ML?\n\n\n\n\n\nOct 15, 2024\n\n\nAlberto Alvarez\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "About Me - Alberto Alvarez",
+    "section": "",
+    "text": "Hi there! Welcome to my personal blog. I’m exited to share with you a bit of my learning path on AI/ML and embedded systems.\n\nWIP"
   }
 ]

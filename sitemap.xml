@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://areberoto.github.io/posts/welcome/index.html</loc>
-    <lastmod>2024-10-16T02:08:38.462Z</lastmod>
+    <loc>https://areberoto.github.io/posts/intro-ml/index.html</loc>
+    <lastmod>2024-10-16T05:09:31.702Z</lastmod>
+  </url>
+  <url>
+    <loc>https://areberoto.github.io/about.html</loc>
+    <lastmod>2024-10-16T01:56:15.099Z</lastmod>
   </url>
   <url>
     <loc>https://areberoto.github.io/index.html</loc>
     <lastmod>2024-10-16T02:04:58.228Z</lastmod>
   </url>
   <url>
-    <loc>https://areberoto.github.io/about.html</loc>
-    <lastmod>2024-10-16T01:56:15.099Z</lastmod>
+    <loc>https://areberoto.github.io/posts/welcome/index.html</loc>
+    <lastmod>2024-10-16T02:08:38.462Z</lastmod>
   </url>
 </urlset>
