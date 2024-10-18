@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Alberto Alvarez">
+<meta name="dcterms.date" content="2024-10-17">
+<meta name="description" content="Learn what is ML, the types of ML and some basic concepts and methods…">
 
-<title>Embedded Linux – HOME</title>
+<title>Brief introduction to AI/ML – HOME</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +23,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,19 +103,51 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">HOME</span>
     </a>
   </div>
@@ -89,25 +158,25 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./ai-ml.html"> 
+    <a class="nav-link" href="../../../ai-ml.html"> 
 <span class="menu-text">AI/ML</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./edge-ai.html"> 
+    <a class="nav-link" href="../../../edge-ai.html"> 
 <span class="menu-text">Edge AI</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./embedded-linux.html" aria-current="page"> 
+    <a class="nav-link" href="../../../embedded-linux.html"> 
 <span class="menu-text">Embedded Linux</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./certificates/certificates.html"> 
+    <a class="nav-link" href="../../../certificates/certificates.html"> 
 <span class="menu-text">Certificates</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -130,42 +199,171 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Embedded Linux</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Brief introduction to AI/ML</h1>
+                  <div>
+        <div class="description">
+          Learn what is ML, the types of ML and some basic concepts and methods…
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">machine learning</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Alberto Alvarez </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 17, 2024</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-<section id="some-of-the-topics-you-will-find-in-this-blog" class="level2">
-<h2 class="anchored" data-anchor-id="some-of-the-topics-you-will-find-in-this-blog">Some of the topics you will find in this blog:</h2>
+<section id="what-is-machine-learning" class="level1">
+<h1>What is Machine Learning?</h1>
+<p>In today’s world, hearing about <em>Artificial Intelligence</em> (AI) in a daily conversation is not uncommon. We hear about it everywhere and everyone wants to talk about it, even if they have no real clue of how it works or what it really is. Some even say it will take over humanity very soon 👀.</p>
+<p>There is another field that is unlikely to hear in daily conversations, but which is very tightly related to AI: <em>Machine Learning</em> (ML). There are many different definitions of what machine learning is, but let’s look at the following one to keep it simple:</p>
+<blockquote class="blockquote">
+<p>“<em>Field of study that gives computers the ability to learn without being explicitly programmed</em>” - Arthur Samuel (1959).</p>
+</blockquote>
+<p>That is a very informal definition. Briefly, machine learning is the process in which a computer learns how to do a task or how to solve a problem. The rules have not been explicitly programmed by the human, instead found by the machine during its training process.</p>
+<section id="types-of-machine-learning" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-machine-learning">Types of Machine Learning</h2>
+<p>There are three main types of ML, which we briefly explain below:</p>
 <ul>
-<li>Artificial Intelligence and Machine Learning</li>
-<li>Machine Learning at the Edge
+<li><strong>Supervised learning:</strong> the machine learns from a given dataset that contains the right answers, thus the name ‘<em>supervised</em>’.</li>
+<li><strong>Unsupervised learning:</strong> The machine doesn’t know anything about the expected output, but tries to learn/find patterns in the data that can be later used to solve a task. Some example algorithms are:
 <ul>
-<li>Optimization methods for ML deployment in edge devices</li>
+<li>Clustering</li>
+<li>Anomaly Detection</li>
+<li>Dimensionality reduction</li>
 </ul></li>
-<li>Embedded Linux &amp; systems</li>
-<li>Programming, most probably using Python and C/C++</li>
+<li><strong>Reinforcement learning:</strong> The machine learns by trial and error. Good examples for this are games, that a computer learns how to play by trial and error until it becomes very good at it.</li>
 </ul>
+</section>
+<section id="regression-vs-classification" class="level2">
+<h2 class="anchored" data-anchor-id="regression-vs-classification">Regression vs classification</h2>
+<p>Also, is important to differenciate a <em>regression model</em> from a <em>classification model</em>:</p>
+<ul>
+<li><strong>Regression model:</strong> Predicts values, such as house prices or temperature. These values are numbers like $250,000.00, 23.7 °C, etc. Infinitely many possible outputs.</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A(Input features) --&gt; B(Regression model)
+  B --&gt; C(Predicted value)
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Classification model:</strong> predicts classes or categories, such as a picture representing a “<em>cat</em>” or a “<em>dog</em>”. Discrete or finite set of possible outputs.</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A(Input image) --&gt; B(Classification model)
+  B --&gt; C(Class 1)
+  B --&gt; D(Class 2)
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="terminology" class="level2">
+<h2 class="anchored" data-anchor-id="terminology">Terminology</h2>
+<ul>
+<li><strong>Training dataset:</strong> Data used to train the model, i.e., fed to the algorithm for it to learn the rules to predict the outputs.</li>
+<li><strong>Validation dataset:</strong> Used to validate the trained model and evaluate the accuracy of prediction. It helps determine if the model is good at predicting outputs from unseen data. If not, more training is required, or a bigger training data.</li>
+<li><strong>Test dataset:</strong> Data used to test the model after trained and validated, to confirm real accuracy of model.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+DeepLearning.AI - Machine Learning Specialization
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sometimes validation dataset and test dataset are used as one.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="do-you-know-a-learning-algorithm" class="level1">
+<h1>Do you know a learning algorithm?</h1>
+<section id="linear-regression" class="level2">
+<h2 class="anchored" data-anchor-id="linear-regression">Linear regression</h2>
+<p>I’m sure you have heard about <em>linear regression</em>, a very simple algorithm that fits a straight line to a given data. This algorithm belongs to supervised learning, since it uses available data to fit the line, which then can be used to predict a value (even though not very accurate). Mathematically, this algorithm is as simple as below:</p>
+<p><span class="math display">\[
+f_{w,b}(x) = wx+b
+\]</span></p>
+<p>So yes, you know at least one learning algorithm, and it is very simple!</p>
+<section id="example" class="level3">
+<h3 class="anchored" data-anchor-id="example">Example</h3>
+<p>We have the prices for two houses: a small one (900 sqft) and a big one (1,450 sqft). The small one costs $150,000.00 and the big one $280,000.00. We would like to predict the price of a medium size house (1,050 sqft).</p>
+<div id="3120d557" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">900</span>, <span class="dv">1450</span>]</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> [<span class="dv">150000</span>, <span class="dv">280000</span>]</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Housing Prices"</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>plt.scatter(x, y, marker<span class="op">=</span><span class="st">'x'</span>, c<span class="op">=</span><span class="st">'r'</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-2-output-1.png" width="600" height="431" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="conclusions" class="level1">
+<h1>Conclusions</h1>
+<p>We learned some very basic terminology and gave a brief introduction of what machine learning is. Good start!</p>
 
 
 </section>

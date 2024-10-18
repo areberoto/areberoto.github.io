@@ -106,6 +106,10 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
+    <a class="nav-link" href="../../certificates.html"> 
+<span class="menu-text">Certificates</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
@@ -177,11 +181,14 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="where-am-i-at-the-end-of-2024" class="level1">
 <h1>Where am I at the end of 2024?</h1>
-<p>Back in 2021 I took Andrew Ng’s “<em>Machine Learning by Stanford University</em>” specialization in Coursera, which was my first formal introduction to the amazing field of Machine Learning (ML). It honestly felt really good to finish the specialization and not quit in the process, but I have to say, it was not easy! I remember some lectures were very complex, specially when learning about stochastic gradient descent (SGD) for the first time. Anyways, I managed to finish the specialization and graduate from my Master’s, which eventually got me a job related to ML 🎉.</p>
+<p>Back in 2021 I took Andrew Ng’s “<em>Machine Learning by Stanford University</em>” specialization in Coursera, which was my first formal introduction to the amazing field of Machine Learning (ML).</p>
+<p>It honestly felt really good to finish the specialization and not quit in the process. I must say, it was not easy! I remember some lectures were very complex, specially when learning about stochastic gradient descent (SGD) for the first time.</p>
+<p>Anyways, I managed to finish the specialization and graduate from my Master’s, which eventually got me a job related to ML 🎉. I’m happy because of that!</p>
 <p>I can proudly say that below certificate is my first one in the field! I’m sure it will not be the last one!</p>
 <p><img src="./data/certificate.png" class="img-fluid"></p>
-<p>Since late 2021 I have worked in ML related tasks. I optimize and deploy deep learning models to embedded devices that have what we call a deep learning accelerator or <em>Neural Processing Unit</em> (NPU). However, I’m really interested in diving deeper into Machine Learning, Deep Learning, Natural Language Processing (NLP), computer vision, optimization methods for Edge AI/ML and much more!</p>
-<p>For those reasons, I really want to get back to the basics of ML to refresh the concepts and strengthen my skills, to eventually become an expert in the field. I have decided to start my learning path again by taking the new, refreshed “<em>Machine Learning Specialization</em>” course from DeepLearning.AI and share with you my journey in this blog. I hope you like it!</p>
+<p>Since late 2021 I have worked in ML related tasks. I optimize and deploy deep learning models to embedded devices that have a deep learning accelerator or <em>Neural Processing Unit</em> (NPU).</p>
+<p>Now I’m really interested in diving deeper into Machine Learning (ML), Deep Learning (DL), Natural Language Processing (NLP), computer vision, optimization methods for Edge AI/ML and much more! To achieve that, I want to get back to the basics of ML to refresh the concepts and strengthen my skills, to eventually become an expert in the field.</p>
+<p>I have decided to start my learning path again by taking the new, refreshed “<em>Machine Learning Specialization</em>” course from <a href="https://www.deeplearning.ai/">DeepLearning.AI</a> and share with you my journey in this blog. I hope you like it!</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -316,7 +323,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/areberoto\.github\.io\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

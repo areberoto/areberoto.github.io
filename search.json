@@ -1,36 +1,29 @@
 [
   {
-    "objectID": "posts/intro-ml/index.html",
-    "href": "posts/intro-ml/index.html",
+    "objectID": "posts/2024/welcome/index.html",
+    "href": "posts/2024/welcome/index.html",
     "title": "Getting back to it, starting from the basics of ML!",
     "section": "",
-    "text": "Back in 2021 I took Andrew Ng’s “Machine Learning by Stanford University” specialization in Coursera, which was my first formal introduction to the amazing field of Machine Learning (ML). It honestly felt really good to finish the specialization and not quit in the process, but I have to say, it was not easy! I remember some lectures were very complex, specially when learning about stochastic gradient descent (SGD) for the first time. Anyways, I managed to finish the specialization and graduate from my Master’s, which eventually got me a job related to ML 🎉.\nI can proudly say that below certificate is my first one in the field! I’m sure it will not be the last one!\n\nSince late 2021 I have worked in ML related tasks. I optimize and deploy deep learning models to embedded devices that have what we call a deep learning accelerator or Neural Processing Unit (NPU). However, I’m really interested in diving deeper into Machine Learning, Deep Learning, Natural Language Processing (NLP), computer vision, optimization methods for Edge AI/ML and much more!\nFor those reasons, I really want to get back to the basics of ML to refresh the concepts and strengthen my skills, to eventually become an expert in the field. I have decided to start my learning path again by taking the new, refreshed “Machine Learning Specialization” course from DeepLearning.AI and share with you my journey in this blog. I hope you like it!\n\n\n\n\n\n\nDeepLearning.AI - Machine Learning Specialization\n\n\n\nYou can find the specialization at: Machine Learning Specialization."
+    "text": "First of all, welcome to my new personal blog, where I will share with you very interesting topics about AI/ML, programming and embedded systems 😄."
   },
   {
-    "objectID": "posts/intro-ml/index.html#types-of-machine-learning",
-    "href": "posts/intro-ml/index.html#types-of-machine-learning",
+    "objectID": "posts/2024/welcome/index.html#conclusion",
+    "href": "posts/2024/welcome/index.html#conclusion",
     "title": "Getting back to it, starting from the basics of ML!",
-    "section": "Types of Machine Learning",
-    "text": "Types of Machine Learning\nThere are three main types of ML, which we briefly explain:\n\nSupervised learning:\nUnsupervised learning:\nReinforcement learning:"
+    "section": "Conclusion",
+    "text": "Conclusion\nI’m starting my AI/ML learning path from scratch again and I will document part of it in this blog. Come join me in this adventure! Looking forward to it! 💻💯"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Hi! I’m Alberto, a software engineer working with AI/ML and programming for embedded systems 💻. Come join me in my learning path of these amazing fields and let’s discover together new techonlogies and ways to code! Oh, and I also like to take photos 📸, so you might find some of my pics throughout the blog from now and then. I hope you enjoy it!"
-  },
-  {
-    "objectID": "embedded-linux.html",
-    "href": "embedded-linux.html",
-    "title": "Embedded Linux",
+    "objectID": "edge-ai.html",
+    "href": "edge-ai.html",
+    "title": "Edge AI",
     "section": "",
     "text": "Artificial Intelligence and Machine Learning\nMachine Learning at the Edge\n\nOptimization methods for ML deployment in edge devices\n\nEmbedded Linux & systems\nProgramming, most probably using Python and C/C++"
   },
   {
-    "objectID": "embedded-linux.html#some-of-the-topics-you-will-find-in-this-blog",
-    "href": "embedded-linux.html#some-of-the-topics-you-will-find-in-this-blog",
-    "title": "Embedded Linux",
+    "objectID": "edge-ai.html#some-of-the-topics-you-will-find-in-this-blog",
+    "href": "edge-ai.html#some-of-the-topics-you-will-find-in-this-blog",
+    "title": "Edge AI",
     "section": "",
     "text": "Artificial Intelligence and Machine Learning\nMachine Learning at the Edge\n\nOptimization methods for ML deployment in edge devices\n\nEmbedded Linux & systems\nProgramming, most probably using Python and C/C++"
   },
@@ -49,24 +42,59 @@
     "text": "Artificial Intelligence and Machine Learning\nMachine Learning at the Edge\n\nOptimization methods for ML deployment in edge devices\n\nEmbedded Linux & systems\nProgramming, most probably using Python and C/C++"
   },
   {
-    "objectID": "edge-ai.html",
-    "href": "edge-ai.html",
-    "title": "Edge AI",
+    "objectID": "embedded-linux.html",
+    "href": "embedded-linux.html",
+    "title": "Embedded Linux",
     "section": "",
     "text": "Artificial Intelligence and Machine Learning\nMachine Learning at the Edge\n\nOptimization methods for ML deployment in edge devices\n\nEmbedded Linux & systems\nProgramming, most probably using Python and C/C++"
   },
   {
-    "objectID": "edge-ai.html#some-of-the-topics-you-will-find-in-this-blog",
-    "href": "edge-ai.html#some-of-the-topics-you-will-find-in-this-blog",
-    "title": "Edge AI",
+    "objectID": "embedded-linux.html#some-of-the-topics-you-will-find-in-this-blog",
+    "href": "embedded-linux.html#some-of-the-topics-you-will-find-in-this-blog",
+    "title": "Embedded Linux",
     "section": "",
     "text": "Artificial Intelligence and Machine Learning\nMachine Learning at the Edge\n\nOptimization methods for ML deployment in edge devices\n\nEmbedded Linux & systems\nProgramming, most probably using Python and C/C++"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "About Me - Alberto Alvarez",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Hi there! Welcome to my personal blog. I’m exited to share with you a bit of my learning path on AI/ML and embedded systems.\n\nWIP"
+    "text": "Hi! I’m Alberto, a software engineer working with AI/ML and programming for embedded systems 💻. Come join me in my learning path of these amazing fields and let’s discover together new techonlogies and ways to code! Oh, and I also like to take photos 📸, so you might find some of my pics throughout the blog from now and then. I hope you enjoy it!"
+  },
+  {
+    "objectID": "posts/2024/basics-ai-ml/index.html",
+    "href": "posts/2024/basics-ai-ml/index.html",
+    "title": "Brief introduction to AI/ML",
+    "section": "",
+    "text": "In today’s world, hearing about Artificial Intelligence (AI) in a daily conversation is not uncommon. We hear about it everywhere and everyone wants to talk about it, even if they have no real clue of how it works or what it really is. Some even say it will take over humanity very soon 👀.\nThere is another field that is unlikely to hear in daily conversations, but which is very tightly related to AI: Machine Learning (ML). There are many different definitions of what machine learning is, but let’s look at the following one to keep it simple:\n\n“Field of study that gives computers the ability to learn without being explicitly programmed” - Arthur Samuel (1959).\n\nThat is a very informal definition. Briefly, machine learning is the process in which a computer learns how to do a task or how to solve a problem. The rules have not been explicitly programmed by the human, instead found by the machine during its training process.\n\n\nThere are three main types of ML, which we briefly explain below:\n\nSupervised learning: the machine learns from a given dataset that contains the right answers, thus the name ‘supervised’.\nUnsupervised learning: The machine doesn’t know anything about the expected output, but tries to learn/find patterns in the data that can be later used to solve a task. Some example algorithms are:\n\nClustering\nAnomaly Detection\nDimensionality reduction\n\nReinforcement learning: The machine learns by trial and error. Good examples for this are games, that a computer learns how to play by trial and error until it becomes very good at it.\n\n\n\n\nAlso, is important to differenciate a regression model from a classification model:\n\nRegression model: Predicts values, such as house prices or temperature. These values are numbers like $250,000.00, 23.7 °C, etc. Infinitely many possible outputs.\n\n\n\n\n\n\nflowchart LR\n  A(Input features) --&gt; B(Regression model)\n  B --&gt; C(Predicted value)\n\n\n\n\n\n\n\nClassification model: predicts classes or categories, such as a picture representing a “cat” or a “dog”. Discrete or finite set of possible outputs.\n\n\n\n\n\n\nflowchart LR\n  A(Input image) --&gt; B(Classification model)\n  B --&gt; C(Class 1)\n  B --&gt; D(Class 2)\n\n\n\n\n\n\n\n\n\n\nTraining dataset: Data used to train the model, i.e., fed to the algorithm for it to learn the rules to predict the outputs.\nValidation dataset: Used to validate the trained model and evaluate the accuracy of prediction. It helps determine if the model is good at predicting outputs from unseen data. If not, more training is required, or a bigger training data.\nTest dataset: Data used to test the model after trained and validated, to confirm real accuracy of model.\n\n\n\n\n\n\n\nDeepLearning.AI - Machine Learning Specialization\n\n\n\nSometimes validation dataset and test dataset are used as one."
+  },
+  {
+    "objectID": "posts/2024/basics-ai-ml/index.html#types-of-machine-learning",
+    "href": "posts/2024/basics-ai-ml/index.html#types-of-machine-learning",
+    "title": "Brief introduction to AI/ML",
+    "section": "",
+    "text": "There are three main types of ML, which we briefly explain below:\n\nSupervised learning: the machine learns from a given dataset that contains the right answers, thus the name ‘supervised’.\nUnsupervised learning: The machine doesn’t know anything about the expected output, but tries to learn/find patterns in the data that can be later used to solve a task. Some example algorithms are:\n\nClustering\nAnomaly Detection\nDimensionality reduction\n\nReinforcement learning: The machine learns by trial and error. Good examples for this are games, that a computer learns how to play by trial and error until it becomes very good at it."
+  },
+  {
+    "objectID": "posts/2024/basics-ai-ml/index.html#regression-vs-classification",
+    "href": "posts/2024/basics-ai-ml/index.html#regression-vs-classification",
+    "title": "Brief introduction to AI/ML",
+    "section": "",
+    "text": "Also, is important to differenciate a regression model from a classification model:\n\nRegression model: Predicts values, such as house prices or temperature. These values are numbers like $250,000.00, 23.7 °C, etc. Infinitely many possible outputs.\n\n\n\n\n\n\nflowchart LR\n  A(Input features) --&gt; B(Regression model)\n  B --&gt; C(Predicted value)\n\n\n\n\n\n\n\nClassification model: predicts classes or categories, such as a picture representing a “cat” or a “dog”. Discrete or finite set of possible outputs.\n\n\n\n\n\n\nflowchart LR\n  A(Input image) --&gt; B(Classification model)\n  B --&gt; C(Class 1)\n  B --&gt; D(Class 2)"
+  },
+  {
+    "objectID": "posts/2024/basics-ai-ml/index.html#terminology",
+    "href": "posts/2024/basics-ai-ml/index.html#terminology",
+    "title": "Brief introduction to AI/ML",
+    "section": "",
+    "text": "Training dataset: Data used to train the model, i.e., fed to the algorithm for it to learn the rules to predict the outputs.\nValidation dataset: Used to validate the trained model and evaluate the accuracy of prediction. It helps determine if the model is good at predicting outputs from unseen data. If not, more training is required, or a bigger training data.\nTest dataset: Data used to test the model after trained and validated, to confirm real accuracy of model.\n\n\n\n\n\n\n\nDeepLearning.AI - Machine Learning Specialization\n\n\n\nSometimes validation dataset and test dataset are used as one."
+  },
+  {
+    "objectID": "posts/2024/basics-ai-ml/index.html#linear-regression",
+    "href": "posts/2024/basics-ai-ml/index.html#linear-regression",
+    "title": "Brief introduction to AI/ML",
+    "section": "Linear regression",
+    "text": "Linear regression\nI’m sure you have heard about linear regression, a very simple algorithm that fits a straight line to a given data. This algorithm belongs to supervised learning, since it uses available data to fit the line, which then can be used to predict a value (even though not very accurate). Mathematically, this algorithm is as simple as below:\n\\[\nf_{w,b}(x) = wx+b\n\\]\nSo yes, you know at least one learning algorithm, and it is very simple!\n\nExample\nWe have the prices for two houses: a small one (900 sqft) and a big one (1,450 sqft). The small one costs $150,000.00 and the big one $280,000.00. We would like to predict the price of a medium size house (1,050 sqft).\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx = [900, 1450]\ny = [150000, 280000]\n\nfig, ax = plt.subplots()\nplt.title(\"Housing Prices\")\nplt.scatter(x, y, marker='x', c='r')\nplt.show()"
   }
 ]
