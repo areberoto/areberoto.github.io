@@ -1,0 +1,13 @@
+---
+title: "Edge AI"
+page-layout: full
+title-block-banner: true
+---
+
+## Some of the topics you will find in this blog:
+
+* Artificial Intelligence and Machine Learning
+* Machine Learning at the Edge
+    - Optimization methods for ML deployment in edge devices
+* Embedded Linux & systems
+* Programming, most probably using Python and C/C++

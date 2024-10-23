@@ -1,0 +1,9 @@
+---
+title: "Certificates"
+page-layout: full
+title-block-banner: true
+---
+
+## Machine Learning by Stanford University
+
+![](./files/certificate.png)

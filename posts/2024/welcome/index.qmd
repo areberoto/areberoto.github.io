@@ -1,0 +1,38 @@
+---
+title: "Getting back to it, starting from the basics of ML!"
+description: "Why have I created this blog about AI/ML?"
+author: "Alberto Alvarez"
+date: "2024-10-17"
+image: "motivated.jpg"
+categories: [machine learning, blogging]
+---
+
+First of all, welcome to my new personal blog, where I will share with you very interesting topics about AI/ML, programming and embedded systems 😄.
+
+# Where am I at the end of 2024?
+
+Back in 2021 I took Andrew Ng's "*Machine Learning by Stanford University*" specialization in Coursera, which was my first formal introduction to the amazing field of Machine Learning (ML).
+
+It honestly felt really good to finish the specialization and not quit in the process. I must say, it was not easy! I remember some lectures were very complex, specially when learning about stochastic gradient descent (SGD) for the first time.
+
+Anyways, I managed to finish the specialization and graduate from my Master's, which eventually got me a job related to ML 🎉. I'm happy because of that!
+
+I can proudly say that below certificate is my first one in the field! I'm sure it will not be the last one!
+
+![](../../../certificates/files/certificate.png)
+
+Since late 2021 I have worked in ML related tasks. I optimize and deploy deep learning models to embedded devices that have a deep learning accelerator or *Neural Processing Unit* (NPU).
+
+Now I'm really interested in diving deeper into Machine Learning (ML), Deep Learning (DL), Natural Language Processing (NLP), computer vision, optimization methods for Edge AI/ML and much more! To achieve that, I  want to get back to the basics of ML to refresh the concepts and strengthen my skills, to eventually become an expert in the field.
+
+I have decided to start my learning path again by taking the new, refreshed "*Machine Learning Specialization*" course from [DeepLearning.AI](https://www.deeplearning.ai/) and share with you my journey in this blog. I hope you like it!
+
+::: {.callout-tip}
+## DeepLearning.AI - Machine Learning Specialization
+
+You can find the specialization at: [Machine Learning Specialization](https://www.deeplearning.ai/courses/machine-learning-specialization/).
+:::
+
+## Conclusion
+
+I'm starting my AI/ML learning path from scratch again and I will document part of it in this blog. Come join me in this adventure! Looking forward to it! 💻💯
